@@ -1985,6 +1985,10 @@ ul.listing-style.modify li:before {
   margin: 6px 0;
   transition: all 0.3s ease;
 }
+
+.full-width-header .rs-header .menu-area .new-nav-expander span{
+  background: #000000;
+}
 .full-width-header .rs-header .menu-area .nav-expander span.dot1 {
   margin-top: 0;
 }
@@ -5735,7 +5739,7 @@ body .modal-backdrop {
   text-align: center;
   background: #d3fcf8;
   border-radius: 10px;
-  padding: 50px 30px 45px;
+  padding: 20px;
 }
 .rs-subject.style1 .subject-wrap img {
   transition: all 0.3s ease;
@@ -5792,6 +5796,7 @@ body .modal-backdrop {
   display: flex;
   align-items: center;
 }
+
 .rs-categories.style1 .categories-item .icon-part {
   float: left;
   margin-right: 25px;
@@ -15434,21 +15439,7 @@ input[type="number"]::-webkit-inner-spin-button {
   
 }
 
-.job-img-center img{
-  animation-name: job-animate;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
 
-@keyframes job-animate{
-  0%{
-    transform: scale(1);
-  }
-
-  100%{
-    transform: scale(0.9);
-  }
-}
 
 
 
@@ -15470,14 +15461,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 }
-
-.slider img {
-  width: 200px;
-  height: 200px;
-  margin: 0 15px;
-}
-
-
 @keyframes slide {
   0% {
       transform: translateX(0);
@@ -15489,9 +15472,27 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
+.slider-2 {
+  display: flex;
+  animation: slide2 15s linear infinite;
+
+
+}
+
+@keyframes slide2 {
+  0% {
+      transform: translateX(-150%);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
+
+
 
 .job-btn{
-  padding: 17px 0px;
+  padding: 12px 0px;
   width: 100%;
   font-size: 20px;
   color: white;
@@ -15503,3 +15504,14 @@ input[type="number"]::-webkit-inner-spin-button {
   color: black;
   background-color: orangered;
 }
+
+
+.rs-categories.style1 .categories-item:hover {
+  background-color: #ff7421;
+}
+
+.job-a{
+  color : white;
+  font-size: 22px;
+}
+
